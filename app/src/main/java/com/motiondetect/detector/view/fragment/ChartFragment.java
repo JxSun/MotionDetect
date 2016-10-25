@@ -138,10 +138,10 @@ public class ChartFragment extends BaseDisplayFragment implements ChartFragmentC
     }
 
     @Override
-    public void updateCharts(ChartPointValue[] meanTorques) {
+    public void updateCharts(ChartPointValue[] meanMotions) {
         for (int i = 0; i < CHART_COUNT; i++) {
-            final int x = meanTorques[i].x;
-            final float y = meanTorques[i].y;
+            final int x = meanMotions[i].x;
+            final float y = meanMotions[i].y;
 
             ColumnChartData data = mCharts.get(i).getColumnChartData();
             data.getColumns().get(x).getValues().get(0).setValue(y).setColor(ChartUtils.COLOR_BLUE);

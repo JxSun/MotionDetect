@@ -31,10 +31,6 @@ public class DropboxClient {
         return mIsAvailable;
     }
 
-    public DbxClientV2 get() {
-        return mClient;
-    }
-
     public boolean uploadAndFinish(File file, String targetName) {
         if (!isAvailable()) {
             Log.e(TAG, "Dropbox client not available yet.");
