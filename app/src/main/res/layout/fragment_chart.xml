@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="steps" type="String" />
+        <variable name="period" type="String" />
+        <variable name="motionX" type="String" />
+        <variable name="motionY" type="String" />
+        <variable name="motionZ" type="String" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/motion_x_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_fragment_chart_height"
+            android:layout_marginStart="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginLeft="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginEnd="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginRight="@dimen/chart_fragment_chart_margin_horizontal"
+            android:paddingTop="@dimen/chart_fragment_chart_padding_top" />
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/motion_y_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_fragment_chart_height"
+            android:layout_marginStart="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginLeft="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginEnd="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginRight="@dimen/chart_fragment_chart_margin_horizontal"
+            android:paddingTop="@dimen/chart_fragment_chart_padding_top" />
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/motion_z_chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_fragment_chart_height"
+            android:layout_marginStart="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginLeft="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginEnd="@dimen/chart_fragment_chart_margin_horizontal"
+            android:layout_marginRight="@dimen/chart_fragment_chart_margin_horizontal"
+            android:paddingTop="@dimen/chart_fragment_chart_padding_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/chart_fragment_info_layout_margin_top"
+            android:layout_marginStart="@dimen/chart_fragment_info_layout_margin_other"
+            android:layout_marginLeft="@dimen/chart_fragment_info_layout_margin_other"
+            android:layout_marginEnd="@dimen/chart_fragment_info_layout_margin_other"
+            android:layout_marginRight="@dimen/chart_fragment_info_layout_margin_other">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="60dp"
+                    android:text="@{steps}"
+                    android:textSize="@dimen/chart_fragment_info_text_size_large_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="25dp"
+                    android:text="steps"
+                    android:textSize="@dimen/chart_fragment_info_text_size_small" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="70dp"
+                    android:text="@{period}"
+                    android:textSize="@dimen/chart_fragment_info_text_size_large_1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="50dp"
+                    android:text="ms"
+                    android:textSize="@dimen/chart_fragment_info_text_size_small" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/chart_fragment_info_layout_margin_top"
+            android:layout_marginStart="@dimen/chart_fragment_info_layout_margin_other"
+            android:layout_marginLeft="@dimen/chart_fragment_info_layout_margin_other"
+            android:layout_marginEnd="@dimen/chart_fragment_info_layout_margin_other"
+            android:layout_marginRight="@dimen/chart_fragment_info_layout_margin_other">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="25dp"
+                    android:text="@{motionX}"
+                    android:textSize="@dimen/chart_fragment_info_text_size_large_2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:text="x"
+                    android:textSize="@dimen/chart_fragment_info_text_size_small" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="25dp"
+                    android:text="@{motionY}"
+                    android:textSize="@dimen/chart_fragment_info_text_size_large_2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:text="y"
+                    android:textSize="@dimen/chart_fragment_info_text_size_small" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="25dp"
+                    android:text="@{motionZ}"
+                    android:textSize="@dimen/chart_fragment_info_text_size_large_2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:text="z"
+                    android:textSize="@dimen/chart_fragment_info_text_size_small" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.DeviceListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/device_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/device_list_title"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageButton
+            android:id="@+id/device_discovery_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/toolbar_btn_padding"
+            android:paddingBottom="@dimen/toolbar_btn_padding"
+            android:paddingLeft="@dimen/toolbar_btn_padding"
+            android:paddingRight="@dimen/toolbar_btn_padding"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_bluetooth_searching_24dp"
+            android:contentDescription="@string/discovery_btn_content_description"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/dropbox_loging_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/toolbar_btn_padding"
+            android:paddingBottom="@dimen/toolbar_btn_padding"
+            android:paddingLeft="@dimen/toolbar_btn_padding"
+            android:paddingRight="@dimen/toolbar_btn_padding"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_cloud_queue_24dp"
+            android:contentDescription="@string/discovery_btn_content_description"
+            android:background="@android:color/transparent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/device_list_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/device_list_toolbar" />
+
+    <ProgressBar
+        android:id="@+id/device_scan_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+

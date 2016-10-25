@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Motion Detector</string>
+
+    <string name="device_list_title">Detected Devices</string>
+    <string name="data_display_title">Data Display</string>
+    <string name="discovery_btn_content_description">Device discovery</string>
+    <string name="login_dropbox_btn_description">Login to Dropbox</string>
+
+    <string name="upload_log_btn_content_description">Upload log</string>
+    <string name="refresh_display_btn_content_description">Refresh display</string>
+    <string name="analyzed_file_name_text">Analyzed file name:</string>
+    <string name="raw_file_name_text">Raw file name:</string>
+
+    <string name="detail_steps_title">Steps:</string>
+    <string name="detail_period_title">Period:</string>
+    <string name="detail_motion_x_title">Motion X:</string>
+    <string name="detail_motion_y_title">Motion Y:</string>
+    <string name="detail_motion_z_title">Motion Z:</string>
+
+    <string name="dropbox_test_app_key">...</string>
+    <string name="dropbox_test_secret_key">...</string>
+    <string name="dropbox_test_data_scheme">db-...</string>
+</resources>

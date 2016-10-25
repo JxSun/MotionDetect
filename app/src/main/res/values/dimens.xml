@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="toolbar_btn_padding">16dp</dimen>
+
+    <dimen name="page_indicator_margin_bottom">10dp</dimen>
+    <dimen name="page_indicator_margin_horizontal">4dp</dimen>
+    <dimen name="page_indicator_size">8dp</dimen>
+
+    <dimen name="detail_fragment_text_size1">22sp</dimen>
+    <dimen name="detail_fragment_text_size2">20sp</dimen>
+    <dimen name="detail_fragment_title_text_width1">100dp</dimen>
+    <dimen name="detail_fragment_title_text_width2">150dp</dimen>
+    <!--<dimen name="detail_fragment_contact_time_margin_top">12dp</dimen>-->
+    <!--<dimen name="detail_fragment_contact_time_start_margin">30dp</dimen>-->
+
+    <dimen name="chart_fragment_chart_height">130dp</dimen>
+    <dimen name="chart_fragment_chart_margin_horizontal">4dp</dimen>
+    <dimen name="chart_fragment_chart_padding_top">20dp</dimen>
+    <dimen name="chart_fragment_info_layout_margin_top">8dp</dimen>
+    <dimen name="chart_fragment_info_layout_margin_other">4dp</dimen>
+    <dimen name="chart_fragment_info_text_size_large_1">36sp</dimen>
+    <dimen name="chart_fragment_info_text_size_large_2">28sp</dimen>
+    <dimen name="chart_fragment_info_text_size_small">14sp</dimen>
+
+</resources>

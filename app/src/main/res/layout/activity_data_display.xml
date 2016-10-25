@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/data_display_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/data_display_title"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageButton
+            android:id="@+id/upload_log_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/toolbar_btn_padding"
+            android:paddingBottom="@dimen/toolbar_btn_padding"
+            android:paddingLeft="@dimen/toolbar_btn_padding"
+            android:paddingRight="@dimen/toolbar_btn_padding"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_log_upload_24dp"
+            android:contentDescription="@string/upload_log_btn_content_description"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:id="@+id/display_refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/toolbar_btn_padding"
+            android:paddingBottom="@dimen/toolbar_btn_padding"
+            android:paddingLeft="@dimen/toolbar_btn_padding"
+            android:paddingRight="@dimen/toolbar_btn_padding"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_refresh_24dp"
+            android:contentDescription="@string/refresh_display_btn_content_description"
+            android:background="@android:color/transparent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/data_display_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/data_display_toolbar"/>
+
+    <RadioGroup
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/page_indicator_margin_bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/chart_indicator"
+            android:layout_width="@dimen/page_indicator_size"
+            android:layout_height="@dimen/page_indicator_size"
+            android:layout_marginEnd="@dimen/page_indicator_margin_horizontal"
+            android:background="@drawable/indicator_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/detail_indicator"
+            android:layout_width="@dimen/page_indicator_size"
+            android:layout_height="@dimen/page_indicator_size"
+            android:layout_marginStart="@dimen/page_indicator_margin_horizontal"
+            android:background="@drawable/indicator_selector"
+            android:button="@null" />
+
+    </RadioGroup>
+
+</RelativeLayout>
